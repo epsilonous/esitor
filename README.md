@@ -1,2 +1,2 @@
 # esitor
-esitor is a text editor
+esitor is a text editor using gtk+

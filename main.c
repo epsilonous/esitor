@@ -5,9 +5,7 @@
 
     main.c
     ------
-    TP 01 : SDSF 2CPI Ecole Nationale Superieure d informatique
-    par : ABIDI Souad et CHELGHOUM Aimen
-    Groupe : 09
+
 
     Role :
         le fichier suivant contient :
@@ -459,7 +457,7 @@ void OnHelp(GtkWidget *pWidget, gpointer data)
     /** creation de la boite du help **/
     pDialog = gtk_message_dialog_new(GTK_WINDOW(pWindow), GTK_DIALOG_MODAL,
             GTK_MESSAGE_INFO, GTK_BUTTONS_OK,
-            "Esitor is a text editor\nVersion Esitor 1.1\n\nWritten By ABIDI Souad and CHELGHOUM Aimen\nESI 2CPI 2016-2017\nGroupe : 09");
+            "Esitor is a text editor\nVersion Esitor 1.1");
     gtk_dialog_run(GTK_DIALOG(pDialog));
     gtk_widget_destroy(pDialog);
 }
@@ -610,7 +608,7 @@ void OnRefresh(GtkWidget *pWidget, gpointer data)
     }
 
     /** la modifiation du label position **/
-    sStatus = g_strdup_printf("NB Word = %d\t\tNB Ligne = %d\t\tNB Char  = %d",
+    sStatus = g_strdup_printf("NB Word = %d\t\tNB Line = %d\t\tNB Char  = %d",
         NbMot, NbLigne, NbChar);
     gtk_label_set_text(GTK_LABEL(pLabelPosition), sStatus);
     gtk_label_set_justify(GTK_LABEL(pLabelPosition), GTK_JUSTIFY_CENTER);
